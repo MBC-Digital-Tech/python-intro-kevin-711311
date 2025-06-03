@@ -13,3 +13,5 @@ def pizza():
         toppings = toppings + " and " + next_topping
         print("Add your next topping (X when finished)")
     print("Your pizza will have cheese " + toppings + ". Enjoy! ")
+
+pizza()

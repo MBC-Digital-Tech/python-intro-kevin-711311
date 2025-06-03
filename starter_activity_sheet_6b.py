@@ -64,4 +64,24 @@ def my_quiz():
             question1 = input()
         print("Correct!")
 
-england_quiz()
+function = input("What exercise do you want to see? (exercise1/exercise2/exercise3/bored/exercise5/exercise6/logging in/england quiz/my quiz) ").strip().lower()
+if function == "exercise1":
+    exercise1()
+elif function == "exercise2":
+    exercise2()
+elif function == "exercise3":
+    exercise3()
+elif function == "bored":
+    bored()
+elif function == "exercise5":
+    exercise5()
+elif function == "exercise6":
+    exercise6()
+elif function == "logging in":
+    logging_in()
+elif function == "england quiz":
+    england_quiz()
+elif function == "my quiz":
+    my_quiz()
+else:
+    print("This input is not on the drawing list!")
