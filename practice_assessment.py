@@ -31,7 +31,7 @@ def pref_breed():
             if 1 <= pref_breed_num <= len(DOG_BREEDS): #len finds the amount of items in the list, acting as the maximum number that can be inputted before it goes over the dog breeds
                 return pref_breed_num
             else:
-                print("Ensure that this number is from 1 to 5") #prints this and repeats the input for the user if it is not within the range
+                print("Ensure that this number is from 1 to 5")
         except ValueError:
             print("Please enter a valid number") #prints this if the input is not an integer
 
@@ -41,7 +41,6 @@ def pref_age():
         try:
             #gets preffered age
             pref_age_num = int(input("Enter preferred age of dog (1 - 15): "))
-            #makes sure if the user's input fits in the age range (1 - 15)
             if 1 <= pref_age_num <= MAX_AGE:
                 return pref_age_num
             else:
